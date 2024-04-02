@@ -1,0 +1,25 @@
+NOTE : edit config.php for database credentials
+
+
+Features :
+
+User / Customer Side :
+
+- user can register 
+
+- user can login 
+
+- once user is logged in, user can update his/her profile
+
+- once user is logged in, he/she can see a nav link to view chefs list
+
+- user can click on book appointment button to go book appointment with chef
+
+- only logged in user can book appointment (NOTE: Appointment Booking page form is static yet)
+
+
+Admin :
+
+- access admin login at /admin-login.php
+
+- login with email : demo@gmail.com, password: password
