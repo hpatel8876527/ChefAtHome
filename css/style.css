@@ -1,0 +1,817 @@
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/image5.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  height: 100px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-top: -8px;
+}
+
+.navbar .nav-links li {
+  margin-right: 30px;
+  align-items: center;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.navbar .nav-links li a:hover {
+  color: rgb(140, 0, 0);
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo h4 {
+  margin-top: -8px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+/* user profile */
+/* Add this to your existing CSS or create a new file */
+
+/* Add this to your existing CSS or create a new file */
+
+.user-profile {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.profile-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-btn:hover {
+  background-color: #0056b3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show-dropdown {
+  display: block;
+}
+
+/* sahdbvgdfsgbds */
+.intro {
+  text-align: center;
+  padding: 120px 80px;
+  background-color: rgba(247, 247, 247, 0.8);
+  margin-top: 40px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  color: rgb(140, 0, 0);
+  margin-bottom: 30px;
+}
+
+.intro p {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Chef List Section */
+
+.chef-list {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.chef-list h2 {
+  margin-bottom: 10px;
+}
+
+.chef-list-plans {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.chef {
+  margin-right: 20px;
+  text-align: center;
+  width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+
+.chef h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.chef-photo {
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.chef-details {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.chef-details li {
+  margin-bottom: 10px;
+}
+
+.featured-chef {
+  color: rgb(140, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -5px;
+  margin-left: -275px !important;
+  display: inline-block;
+  text-shadow: 2px 2px 5px white;
+}
+
+.featured-chef::after {
+  content: "Our Featured Chefs....";
+  display: inline-block;
+  position: absolute;
+  animation: wave 1.5s infinite;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 80px;
+  background-color: #f9f9f9;
+}
+
+.testimonial {
+  margin-bottom: 40px;
+}
+
+.testimonial blockquote {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.testimonial cite {
+  font-size: 18px;
+  font-style: italic;
+  color: #888;
+}
+/* Special Offers Section */
+.special-offers {
+  text-align: center;
+  padding: 80px;
+  background-color: rgba(247, 247, 247, 0.8);
+}
+
+.special-offers h2 {
+  font-size: 32px;
+  color: rgb(140, 0, 0);
+  margin-bottom: 40px;
+}
+
+.special-offers .offer {
+  margin-bottom: 40px;
+}
+
+.special-offers .offer h3 {
+  font-size: 24px;
+  color: rgba(140, 0, 0, 0.464);
+  margin-bottom: 10px;
+}
+
+.special-offers .offer p {
+  font-size: 18px;
+  color: #666;
+}
+/* How it works Section */
+.how-it-works {
+  text-align: center;
+  padding: 80px;
+  background-color: #f9f9f9;
+}
+
+.how-it-works h2 {
+  font-size: 32px;
+  color: rgb(140, 0, 0);
+  margin-bottom: 40px;
+}
+
+.how-it-works .step {
+  margin-bottom: 40px;
+}
+
+.how-it-works .step h3 {
+  font-size: 24px;
+  color: rgba(140, 0, 0, 0.464);
+  margin-bottom: 10px;
+}
+
+.how-it-works .step p {
+  font-size: 18px;
+  color: #666;
+}
+
+.pricing {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.pricing h2 {
+  margin-bottom: 10px;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.plan {
+  margin-right: 20px;
+  text-align: center;
+  width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.plan h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.plan .price {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.plan ul li {
+  margin-bottom: 10px;
+}
+
+.contact {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.contact .contact-card {
+  background-color: #fff;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form .cta-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-media {
+  text-align: center;
+  padding: 80px;
+  background-color: rgba(247, 247, 247, 0.8);
+}
+.social-media-tital {
+  color: rgb(140, 0, 0) !important;
+}
+
+.social-media .social-icons a {
+  margin: 0 25px;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+#linkedin {
+  color: rgba(0, 122, 181, 1);
+}
+
+#twitter {
+  color: rgba(94, 169, 221, 1);
+}
+
+#facebook {
+  color: rgba(58, 87, 157, 1);
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-logo img {
+  height: 125px;
+  max-width: 100%;
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  margin-left: 10px;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: rgb(140, 0, 0);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-info h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  color: #777;
+  margin: 0;
+}
+
+.footer-bottom-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+.book-appointment-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px !important;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.book-appointment-btn .btn-width {
+  width: 100px;
+}
+.book-appointment-btn:hover {
+  background-color: rgb(140, 0, 0);
+}
+
+.team {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  margin-right: 200px;
+  border-radius: 350px;
+}
+
+.team h2 {
+  margin-bottom: 10px;
+}
+
+.team p {
+  margin-bottom: 40px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+}
+
+.team .member {
+  margin-right: 20px;
+}
+
+.team .member img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.team .member h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.team .member p {
+  margin-bottom: 0;
+}
+
+.work {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.work h2 {
+  margin-bottom: 10px;
+}
+
+.work-items {
+  display: flex;
+  justify-content: center;
+}
+
+.work-item {
+  margin-right: 20px;
+  text-align: left;
+  width: 300px;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+}
+
+.work-item .item-description {
+  padding: 10px;
+}
+
+.work-item h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.work-item p {
+  margin-bottom: 0;
+}
+
+/* Media Queries */
+
+/* Mobile Layout (Max-width: 767px) */
+@media screen and (max-width: 767px) {
+  .navbar .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .intro {
+    padding: 80px 20px;
+  }
+
+  .testimonials {
+    padding: 40px;
+  }
+
+  .special-offers {
+    padding: 40px;
+  }
+
+  .how-it-works {
+    padding: 40px;
+  }
+
+  .pricing-plans {
+    flex-wrap: wrap;
+  }
+
+  .plan {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .contact .contact-card {
+    max-width: 90%;
+  }
+
+  .social-media {
+    padding: 40px;
+  }
+
+  .footer-logo h3 {
+    font-size: 20px;
+  }
+
+  .footer-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-links li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer-bottom p {
+    margin-top: 10px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .team {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .work-items {
+    flex-wrap: wrap;
+  }
+
+  .work-item {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+/* Tablet Layout (Min-width: 768px and Max-width: 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar .nav-links {
+    flex-direction: row;
+  }
+
+  .intro {
+    padding: 100px 60px;
+  }
+
+  .testimonials {
+    padding: 60px;
+  }
+
+  .special-offers {
+    padding: 60px;
+  }
+
+  .how-it-works {
+    padding: 60px;
+  }
+
+  .pricing-plans {
+    justify-content: center;
+  }
+
+  .contact .contact-card {
+    max-width: 500px;
+  }
+
+  .social-media {
+    padding: 60px;
+  }
+
+  .footer-logo h3 {
+    font-size: 22px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop Layout (Min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  .navbar .nav-links {
+    flex-direction: row;
+  }
+
+  .intro {
+    padding: 120px 80px;
+  }
+
+  .testimonials {
+    padding: 80px;
+  }
+
+  .special-offers {
+    padding: 80px;
+  }
+
+  .how-it-works {
+    padding: 80px;
+  }
+
+  .pricing-plans {
+    justify-content: center;
+  }
+
+  .contact .contact-card {
+    max-width: 500px;
+  }
+
+  .social-media {
+    padding: 80px;
+  }
+
+  .footer-logo h3 {
+    font-size: 24px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* common css */
+
+.comming-soon {
+  color: rgb(140, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -5px;
+  margin-left: -275px !important;
+  display: inline-block;
+  text-shadow: 2px 2px 5px white;
+}
+
+.comming-soon::after {
+  content: "Our Culinary Plans Coming Soon....";
+  display: inline-block;
+  position: absolute;
+  animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25%,
+  75% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+}
+.home-page-title {
+  color: rgb(140, 0, 0);
+}
